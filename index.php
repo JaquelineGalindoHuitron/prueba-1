@@ -17,16 +17,16 @@
 				
 		Bienvenid@ <?php echo $_SESSION['nombre'] ?> ! <br><br><a href='logout.php'>Cerrar Sesion</a><br/>
 		<br/>
-		<a href='view.php'>Ver y Agregar Datos</a>
+		<a href='view.php'>Ver y agregar Productos</a>
 		<br/><br/>
 	<?php	
 	} else {
 		echo "Debe iniciar sesión para ver esta página.<br/><br/>";
-		echo "<a href='login.php'>Iniciar Sesion</a> | <a href='register.php'>Registrarse</a>";
+		echo "<a href='login.php'>Login</a> | <a href='register.php'>Registrar</a>";
 	}
 	?>
 	<div id="footer">
-		Creado Por <a href="https://jaquelinegalindohuitron.github.io/GalindoJweb/" title="The Beauty Corner">The Beauty Corner</a>
+		Created by <a href="http://blog.chapagain.com.np" title="Mukesh Chapagain">Mukesh Chapagain</a>
 	</div>
 </body>
 </html>

@@ -44,7 +44,7 @@ if(isset($_POST['submit'])) {
 	<form name="form1" method="post" action="">
 		<table width="75%" border="0">
 			<tr> 
-				<td width="15%">Nombre de Usuario</td>
+				<td width="10%">Nombre Usuario</td>
 				<td><input type="text" name="username"></td>
 			</tr>
 			<tr> 

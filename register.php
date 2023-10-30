@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Registrarse</title>
+	<title>Register</title>
 </head>
 
 <body>
@@ -15,7 +15,7 @@ if(isset($_POST['submit'])) {
 	$pass = $_POST['contrasena'];
 
 	if($user == "" || $pass == "" || $name == "" || $email == "") {
-		echo "Todos los campos deben estar llenos. Uno o varios campos están vacíos.";
+		echo "All fields should be filled. Either one or many fields are empty.";
 		echo "<br/>";
 		echo "<a href='register.php'>Go back</a>";
 	} else {
@@ -32,7 +32,7 @@ if(isset($_POST['submit'])) {
 	<form name="form1" method="post" action="">
 		<table width="75%" border="0">
 			<tr> 
-				<td width="15%">Nombre Completo</td>
+				<td width="10%">Nombre</td>
 				<td><input type="text" name="nombre"></td>
 			</tr>
 			<tr> 
@@ -40,7 +40,7 @@ if(isset($_POST['submit'])) {
 				<td><input type="text" name="email"></td>
 			</tr>			
 			<tr> 
-				<td>Nombre de Usuario</td>
+				<td>Nombre Usuario</td>
 				<td><input type="text" name="nomusuario"></td>
 			</tr>
 			<tr> 
@@ -49,7 +49,7 @@ if(isset($_POST['submit'])) {
 			</tr>
 			<tr> 
 				<td>&nbsp;</td>
-				<td><input type="submit" name="submit" value="Registrarse"></td>
+				<td><input type="submit" name="submit" value="Registrar"></td>
 			</tr>
 		</table>
 	</form>

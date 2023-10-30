@@ -11,16 +11,16 @@ if(!isset($_SESSION['valid'])) {
 include_once("connection.php");
 
 //fetching data in descending order (lastest entry first)
-$result = mysqli_query($mysqli, "SELECT * FROM proveedor WHERE login_id=".$_SESSION['id']." ORDER BY id DESC");
+$result = mysqli_query($mysqli, "SELECT * FROM proveedor WHERE id=".$_SESSION['id']." ORDER BY id DESC");
 ?>
 
 <html>
 <head>
-	<title>Vista</title>
+	<title>Pagina Inicio</title>
 </head>
 
 <body>
-	<a href="index.php">Inicio</a> | <a href="add.html">Agregar Nuevos Datos</a> | <a href="logout.php">Cerrar Sesion</a>
+	<a href="index.php">Inicio</a> | <a href="add.html">Agregar nuevos datos</a> | <a href="logout.php">Cerrar Sesion</a>
 	<br/><br/>
 	
 	<table width='80%' border=0>
@@ -29,10 +29,10 @@ $result = mysqli_query($mysqli, "SELECT * FROM proveedor WHERE login_id=".$_SESS
 			<td>Nombre</td>
 			<td>Apellidos</td>
 			<td>Telefono</td>
-			<td>Direccion</td>
+			<td>direccion</td>
 			<td>Email</td>
-			<td>Nombre Negocio</td>
-			<td>Producto</td>
+			<td>Nom Negocio</td>
+			<td>Productos</td>
 
 		</tr>
 		<?php
